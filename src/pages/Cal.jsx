@@ -93,10 +93,10 @@ const Cal = () => {
         <div className='screen'>
             <div className="toolbar">
                 <p>Tools</p>
-                <AddEvents onAdicionar={addHandler} />
-                <Filter activities={events} onSelectedAtivities={handleSelectedAtivities}/>
+                <AddEvents onAddEvent={addHandler} />
+                <Filter activities={events} onSelectedAtivities={handleSelectedAtivities} />
             </div>
-            <div className='calendar'> 
+            <div className='calendar'>
                 <DragAndDropCalendar
                     defaultDate={moment().toDate()}
                     defaultView='month'
@@ -111,12 +111,6 @@ const Cal = () => {
                         toolbar: CustomToolbar,
                     }}
                 />
-                {eventSelected && (
-                    <EventModal
-                        event={eventSelected}
-                        onClose={handleEventClose}
-                    />
-                )}
             </div>
             {eventSelected && (
                 <EventModel event={eventSelected} onClose={handleEventClose} onDelete={handleEventDelete}

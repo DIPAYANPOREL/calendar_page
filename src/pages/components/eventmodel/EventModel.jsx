@@ -53,14 +53,14 @@ const EventModel = ({event, onClose, onDelete, onUpdate}) =>{
                         <Form.Label>Title</Form.Label>
                         <Form.Control type="text" name='title' value={editedEvent.title} onChange={handleInputChange}/>
                     </Form.Group>
-                    <Form.Group controlId="formDesc">
+                    <Form.Group controlId="formDescription">
                         <Form.Label>Description</Form.Label>
-                        <Form.Control as="textarea" rows={3} name='desc' value={editedEvent.description} onChange={handleInputChange}/>
+                        <Form.Control as="textarea" rows={3} name='description' value={editedEvent.description} onChange={handleInputChange}/>
                     </Form.Group>
 
                     <Collapse in={!collapsed}>
                         <div>
-                        <Form.Group controlId="formInicio">
+                        <Form.Group controlId="formStart">
                             <Form.Label>Start</Form.Label>
                             <Form.Control type="datetime-local" name='start' value={adjustDate(editedEvent.start)} onChange={handleStartDateChange}/>
                         </Form.Group>
