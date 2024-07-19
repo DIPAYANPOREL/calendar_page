@@ -57,14 +57,14 @@ const AddEvents = ({ onAddEvent }) => {
                     <Col xs={6}>
                         <Form.Group controlId='formBasicStart'>
                             <Form.Label>Start Date/Time</Form.Label>
-                            <Form.Control type='datetime-local' name='start date'
+                            <Form.Control type='datetime-local' name='start'
                                 value={newEvent.start} onChange={handleChange} />
                         </Form.Group>
                     </Col>
                     <Col xs={6}>
                         <Form.Group controlId='formBasicEnd'>
                             <Form.Label>End Date/Time</Form.Label>
-                            <Form.Control type='datetime-local' name='end date'
+                            <Form.Control type='datetime-local' name='end'
                                 value={newEvent.end} onChange={handleChange} />
                         </Form.Group>
                     </Col>
