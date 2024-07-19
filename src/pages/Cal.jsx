@@ -9,7 +9,7 @@ import "./components/Components-Cal-css.css";
 
 import defaultEvents from './components/defaultEvents';
 import AddEvents from './components/addEvent/AddEvents';
-// import EventModel from './components/eventmodel/eventmodel';
+import EventModel from './components/eventmodel/EventModel';
 import Filter from "./components/filter/Filter"
 import CustomToolbar from './components/customCalendar/CustomToolbar';
 

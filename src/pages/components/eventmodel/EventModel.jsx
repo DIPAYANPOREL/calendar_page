@@ -85,7 +85,7 @@ const EventModel = ({event, onClose, onDelete, onUpdate}) =>{
             </Modal.Body>
             <Modal.Footer className='justify-content-between'>
                 <Button variant='secondary' onClick={()=> setCollapsed(!collapsed)}>
-                    {!collapsed ? 'Ocultar Detalhes' : 'Mostrar Detalhes'}
+                    {!collapsed ? 'More details' : 'More Details'}
                 </Button>
                 <Button variant='danger' onClick={handleDelete}>
                     Delete
