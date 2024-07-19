@@ -18,8 +18,8 @@ function Filter({activities, onSelectedAtivities}){
         if(typeSelected.length === 0 ){
             onSelectedAtivities(activities);
         } else {
-            const eventosFiltrados = activities.filter(activities => typeSelected.includes(activities.type));
-            onSelectedAtivities(eventosFiltrados);
+            const eventsFilters = activities.filter(activities => typeSelected.includes(activities.type));
+            onSelectedAtivities(eventsFilters);
         }
     },[typeSelected, activities, onSelectedAtivities]);
 
